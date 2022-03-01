@@ -1,0 +1,180 @@
+<div id="firstRow">
+  <%- include partials/header.ejs %>
+
+  <title>معرض TEX - مجموعة معرفة للاستشارات والقبولات الجامعية</title>
+
+  <!-- Custom styles for this template -->
+  <link href="/stylesheets/visitorStyle.css" rel="stylesheet">
+</head>
+
+  <div class="row text-center">
+    <div class="col-md-6 mx-auto">
+      <h2 class="white">QR Code</h2>
+      <img src="<%= src %>">
+    </div>
+    <div class="col-md-6">
+      <div class="mx-auto">
+
+        <div class="m-2">
+          <br>
+          <h3 class="white text-center">Edit info here</h3>
+          <form action="/user/<%=foundVisitor._id%>" method="POST">
+            <div class="row">
+              <div class="row text-center">
+                <div class="col-md-6">
+                  <!-- Name -->
+                  <label for="Name">الاسم</label>
+                  <input id="Name" name="Name" type="text" class="form-control" value="<%= foundVisitor.Name %>"
+                    required>
+
+                  <!-- degree  -->
+                  <div class="form-group">
+                    <label for="degree">Degree</label>
+                    <input class="form-control" type="text" name="degree" placeholder="Enter Desired Degree">
+                  </div>
+
+                </div>
+                <div class="col-md-6" id="marginRight">
+                  <!-- email -->
+                  <label for="email">البريد الإلكتروني</label>
+                  <input name="email" id="email" type="email" class="form-control" value="<%= foundVisitor.email %>"
+                    required>
+                  <!-- telephone number  -->
+                  <label for="phone">رقم التيليفون</label>
+                  <input class="form-control" id="phone" type="number" name="telephonNumber"
+                    value="<%= foundVisitor.telephonNumber %>" required>
+
+                  <br>
+                  <button id="generator" type="submit" class="btn btn-secondary btn-lg btn-block  mt-2"
+                    value="Get QR">حفظ
+                  </button>
+
+                </div>
+          </form>
+          <div class="mt-5">
+            <form action="/user/<%=foundVisitor._id%>/print" method="GET">
+              <button class="btn btn-secondary btn-lg btn-block" type="submit"> Print ticket</button>
+            </form>
+          </div>
+          <div class="mt-5">
+            <form action="/user/download" method="GET">
+              <button class="btn btn-secondary btn-lg btn-block mb-5" type="submit"> Download All Visitor Data</button>
+            </form>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <form>
+                <div class="row">
+                  <label for="searchBox1">By Visitor Name</label>
+                  <div class="input-group no-border" id="searchBox1">
+                    <input type="text" value="" class="form-control" placeholder="Search..." onkeyup="showResults(this.value)">
+                </div>
+                  <div class="row">
+                    <div class="dropdown" id="notRelative">
+                      <div id="search-results" class="dropdown-menu">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <form>
+                <div class="row">
+                  <label for="searchBox2">By Visitor Telephone Number</label>
+                  <div class="input-group no-border" id="searchBox2">
+                    <input type="text" value="" class="form-control" placeholder="Search..." onkeyup="showResultsNumber(this.value)">
+                </div>
+                  <div class="row">
+                    <div class="dropdown" id="notRelative">
+                      <div id="search-results-number" class="dropdown-menu">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row container text-center mt-5">
+    <div class="col">
+      <img src="/images/Asset 1.png" alt="" height="100px" width="250px">
+      <br>
+      <button class="btn m-5" id="browseBtn"><a href="https://www.marifetedu.com/">Mareifet Web site</a></button>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+      const showResults = debounce(function(arg){
+      const value = arg.trim();
+      if(value == "" || value.length<=0) {
+        $("#search-results").fadeOut();
+        return;
+      } else {
+        $("#search-results").fadeIn();
+      };
+      var jqxhr = $.get('/search?q=' + value, function(data){
+        $("#search-results").html("");
+      })
+      .done(function(data){
+        if(data.length === 0) {
+          $("#search-results").append("<p class='lead text-center mt-2'>No Results</p>");
+        } else {
+          data.forEach(x => {
+            $("#search-results").append('<a class="dropdown-item purpleBackground" href="http://dubai.marifetedu.com/visitor/'+ x._id + '"><p class="m-2 lead">' + x.Name + '</p> </a>');
+          });
+        }
+      }).fail(function(err){
+        console.log(err);
+      })
+    })
+
+    const showResultsNumber = debounce(function(arg){
+      const value = arg.trim();
+      if(value == "" || value.length<=0) {
+        $("#search-results-number").fadeOut();
+        return;
+      } else {
+        $("#search-results-number").fadeIn();
+      };
+      var jqxhr = $.get('/searchNumber?q=' + value, function(data){
+        $("#search-results-number").html("");
+      })
+      .done(function(data){
+        if(data.length === 0) {
+          $("#search-results-number").append("<p class='lead text-center mt-2'>No Results</p>");
+        } else {
+          data.forEach(x => {
+            $("#search-results-number").append('<a class="dropdown-item purpleBackground" href="http://dubai.marifetedu.com/visitor/'+ x._id + '"><p class="m-2 lead">' + x.Name + '</p> </a>');
+          });
+        }
+      }).fail(function(err){
+        console.log(err);
+      })
+    })
+
+    function debounce(func, wait, immediate){
+      var timeout;
+      return function() {
+        var context = this;
+        args =arguments;
+        var later = function() {
+          timeout = null;
+          if(!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, null);
+        if (callNow) func.apply(contect, args);
+      };
+    };
+</script>
+
+
+  <%- include partials/footer.ejs %>

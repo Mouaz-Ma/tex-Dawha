@@ -1,0 +1,90 @@
+html,body{
+    height: 100%;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../images/istanbul-bosphorus-bridge-at-sunset-with-car-traff-HHLNF7M.jpg);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    box-sizing: border-box;
+    overflow-x: hidden;
+    color: antiquewhite;
+}
+
+/* social icons */
+.fab{
+    font-size: 25px;
+    color: aliceblue;
+    }
+    
+    .fa-facebook:hover {
+      color: #4267B2;
+    }
+    
+    .fa-youtube:hover {
+      color: #FF0000;
+    }
+    
+    .fa-instagram:hover {
+      color: #fb3958;
+    }
+  
+    .fa-whatsapp:hover {
+      color: #25D366;
+    }
+
+#browseBtn{
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid #007DA6;
+    cursor: pointer;
+}
+
+#browseBtn:hover{
+    background-color: #007DA6;
+  }
+
+a{
+    text-decoration: none;
+    color: oldlace;
+}
+
+#phone{
+  padding-right: none !important;
+}
+
+.iti{
+  width: -webkit-fill-available;
+}
+
+a:hover{
+    color: oldlace;
+}
+
+.white{
+    color: oldlace;
+}
+
+/* hide arrows keys */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+  /* whats App btn  */
+
+  #whatsAppBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+  }
+  
+  #whatsAppImage{
+    max-width: 100%;
+    height: 75px;
+  }

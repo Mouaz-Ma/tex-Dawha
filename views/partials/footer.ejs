@@ -1,0 +1,142 @@
+
+              <!--Map & Contact Info.-->
+
+              <section id="contact-sec">
+
+                <div class="location">
+    
+                    <div id="map"></div>
+    
+                    <div class="location-bg">
+    
+                        <div class="location-info">
+    
+                            <h3><span><i class="fa fa-flag" aria-hidden="true"></i></span>موقع الفعالية</h3>
+    
+                            <p class="m-3"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Fairmont Dubai 
+                                Gulf Auditorium, 33rd Floor <br> Dubai
+    
+                                <br> United Arab Emirates
+    
+                            </p>
+    
+                            <p class="m-3"><span><i class="fa fa-phone" aria-hidden="true"></i></span><a href="https://wa.me/905421607794?text=%D8%A7%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%85%D8%B9%D8%B1%D8%B6%20%D8%AA%D9%8A%D9%83%D8%B3%20%D8%AF%D8%A8%D9%8A">+90 542 160 7794</a></p>
+    
+                            <p class="m-3"><span><i class="fas fa-envelope-square" aria-hidden="true"></i></span><a href="mailto:marifetedu@gmail.com" title="marifetedu@gmail.com">marifetedu@gmail.com</a></p>
+    
+                            <div class="btn-register"><a href="#" class="view">سجل الآن</a></div>
+    
+                        </div>
+    
+    
+    
+                    </div>
+    
+                </div>
+    
+                
+    
+    
+    
+            </section>
+    
+            <!--END Map & Contact Info.-->
+
+  </div>
+  <div id="whatsAppBtn">
+    <a href="https://wa.me/905421607794?text=%D8%A7%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%85%D8%B9%D8%B1%D8%B6%20%D8%AA%D9%8A%D9%83%D8%B3%20%D8%AF%D8%A8%D9%8A" class="btn whatsApp"><img id="whatsAppImage"
+        src="https://global-uploads.webflow.com/601befbd3e6c39d9b373aa94/606aecfac9846644d0c6d979_whatsapp.svg"
+        alt=""></a>
+  </div>
+
+  <div class="footer-clean bg-dark">
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-sm-3 text-center">
+                  <div class="">
+                    <a href="https://www.facebook.com/marifetedu/" class="btn facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UCI6lLBCjZqjOQI_UG4_ZQSA" class="btn youtube"><i
+                        class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/marifetedu/?hl=en" class="btn Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/905421607794?text=%D8%A7%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%85%D8%B9%D8%B1%D8%B6%20%D8%AA%D9%8A%D9%83%D8%B3%20%D8%AF%D8%A8%D9%8A" class="btn whatsApp"><i class="fab fa-whatsapp"></i></a>
+                  </div>
+                  <div class=""><p class="copyright">Marifet Group</p></div>
+                   
+                  </div>
+        
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+    <!-- MAP js -->
+
+    <script>
+
+      function initMap() {
+
+          var uluru = {
+
+              lat: 25.226391,
+
+              lng: 55.2821984
+
+          };
+
+          var map = new google.maps.Map(document.getElementById('map'), {
+
+              zoom: 10,
+
+              center: uluru
+
+          });
+
+          var marker = new google.maps.Marker({
+
+              position: uluru,
+
+              map: map
+
+          });
+
+      }
+
+  </script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSHeThGwH1NG6JoHMwEfHYk8Zl5ESHN8o&callback=initMap">
+
+  </script>
+
+  <!-- END MAP js -->
+
+<script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+
+ <!-- script for the phone number flags -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+ <script>
+   const phoneInputField = document.querySelector("#phone");
+   const phoneInput = window.intlTelInput(phoneInputField, {
+     preferredCountries: ["JO", "SY", "EG"],
+     utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+   });
+ </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,508 @@
+/* font */
+
+
+html,body{
+  font-family: 'Tajawal', sans-serif;
+  overflow-x: hidden;
+}
+
+
+#firstRow{
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../images/istanbul-bosphorus-bridge-at-sunset-with-car-traff-HHLNF7M.jpg);
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;  
+  box-sizing: border-box;
+  padding-bottom: 5%;
+}
+
+
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+
+/* social icons */
+.fab{
+  font-size: 25px;
+  color: aliceblue;
+  }
+  
+  .fa-facebook:hover {
+    color: #4267B2;
+  }
+  
+  .fa-youtube:hover {
+    color: #FF0000;
+  }
+  
+  .fa-instagram:hover {
+    color: #fb3958;
+  }
+
+  .fa-whatsapp:hover {
+    color: #25D366;
+  }
+  
+  .white{
+    color: #F2F3F3;
+    font-weight: 800;
+  }
+
+  .form{
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .form-control{
+    margin-top: 10px;
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid oldlace;
+    color: oldlace;
+  }
+
+  #email{
+    margin-bottom: 10px !important;
+  }
+
+  #phone{
+    padding-right: none !important;
+  }
+
+  .iti{
+    width: -webkit-fill-available;
+  }
+
+  input::placeholder{
+    color: oldlace !important;
+  }
+
+  /* submit btn */
+  #generator{
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid #007DA6;
+    cursor: pointer;
+  }
+  
+  #generator:hover{
+    background-color: #007DA6;
+  }
+
+  /* footer */
+
+  #footer{
+    background-color: #007da6
+  }
+
+  /* whats App btn  */
+
+#whatsAppBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; 
+}
+
+#whatsAppImage{
+  max-width: 100%;
+  height: 75px;
+}
+
+/* list style  */
+
+ul{
+  list-style-type: square;
+  color: #1989ae;
+}
+
+/* logos section */
+
+#aydin{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#istnye{
+  border: none;
+  height: 200px;
+  width: 300px;
+}
+
+.aydingImage{
+  border: none;
+  height: 200px;
+  width: 200px;
+}
+
+.sponsorsTitle{
+  font-size: larger;
+  display:inline-block;
+  font-weight: 400;
+  border-bottom: 2px solid #007da6;
+  padding-bottom:8px;
+}
+
+/* gray scale logo effect  */
+.friend-logo {
+  height: 250px;
+  width: auto;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  opacity: .6;
+  -webkit-transition: .6s;
+  -moz-transition: .6s;
+  transition: .6s;
+}
+
+.friend-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  margin-top: -5px;
+  box-shadow: 0px 18px 22px -15px rgba(0,0,0,0.3);
+}
+
+#locationFooter a{
+  text-decoration: none;
+}
+
+.footerIcons{
+  color: #1989ae;
+  font-size: 25px;
+}
+
+.textLocation{
+  color: darkslategray;
+}
+
+#backgroundColor{
+  background-color: aliceblue;
+}
+ 
+.textBlueK3ki{
+  color: #007da6;
+}
+
+
+/* hide arrows keys */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+/* adding mobile view */
+@media only screen and (max-width: 600px) {
+  .lead {
+    margin-bottom: 50px;
+  }
+  #imageAsset{
+    width: 50%;
+  }
+}
+
+#imageAsset{
+  width: 80%;
+}
+
+/*-------------------------------------------------
+    16. Map & Contact Info.
+-------------------------------------------------*/
+
+#map{
+
+  height: 600px;
+
+}
+
+.btn-register .view {
+
+  display: initial;
+
+  padding: 25px 90px;
+
+  border: none;
+
+  text-decoration: none !important;
+
+  background: #ffffff;
+
+  vertical-align: middle;
+
+  position: relative;
+
+  z-index: 1;
+
+  font-size: 20px;
+
+  -webkit-backface-visibility: hidden;
+
+  -moz-osx-font-smoothing: grayscale;
+
+  text-transform: uppercase;
+
+  color: #007da6;
+
+  font-weight: bold;
+
+  transition: all 0.5s ease;
+
+}
+
+.btn-register {
+
+  padding: 50px 0px 30px;
+
+}
+
+.btn-register .view:hover{
+
+ padding: 20px 90px; 
+
+}
+
+.location{
+
+  position: relative;
+
+}
+
+.location-bg{
+
+  position: absolute;
+
+  top: 60px;
+
+  left: 90px;
+
+  background-color: #007da6;
+
+}
+
+.location-info{
+
+  color: #ffffff;
+
+  padding: 40px 50px;
+  
+
+}
+
+.location-info h3{
+
+  font-size: 30px;
+
+  font-weight: 600;
+
+  border-bottom: 1px solid #69e0f0;
+
+  padding-bottom: 15px;
+
+}
+
+
+
+.location-info p{
+
+  display: inline-flex;
+
+  font-size: 20px;
+
+  line-height: 36px;
+
+  font-weight: 300;
+
+  padding-top: 20px;
+
+}
+
+.location-info p a{
+
+  font-size: 20px;
+
+  line-height: 50px;
+
+  font-weight: 300;
+
+  color: #ffffff;
+
+}
+
+.location-info p a:hover{
+
+  text-decoration: none;
+
+}
+
+.location-info span{
+
+  padding-right: 20px;
+
+}
+
+.location-info h3 span i{
+
+  background-color: white;
+
+  color:  #007da6;
+
+  position: relative;
+
+}
+
+.location-info h3 span i:after{
+
+  content: "";
+
+  width: 0;
+
+  height: 0;
+
+  position: absolute;
+
+  bottom: -7px;
+
+  right: 13px;
+
+  margin-top: -3px;
+
+  border-width: 10px 10px 0 10px;
+
+  border-style: solid;
+
+  border-color: #ffffff transparent;
+
+}
+
+.location-info p:hover span i {
+
+  background-color: white;
+
+  color:  #007da6;
+
+  position: relative;
+
+}
+
+.location-info p:hover span i:after{
+
+ content: "";
+
+  width: 0;
+
+  height: 0;
+
+  position: absolute;
+
+  bottom: -7px;
+
+  right: 13px;
+
+  margin-top: -3px;
+
+  border-width: 10px 10px 0 10px;
+
+  border-style: solid;
+
+  border-color: #ffffff transparent;
+
+  }
+
+.location-info span i{
+
+  border: 1px solid #ffffff;
+
+  font-size: 20px;
+
+  border-radius: 50%;
+
+  height: 48px;
+
+  padding-top: 14px;
+
+  width: 48px;
+
+  text-align: center;
+
+}
+
+.location-bg {
+    position: inherit;
+    top: 0;
+    left: 0;
+}
+
+.videoPlayer{
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 575.98px){
+  .location-bg {
+    position: inherit;
+    top: 0;
+    left: 0;
+  }
+
+  .location-info {
+    color: #ffffff;
+    padding: 40px 10px;
+  }
+
+  .location-info h3 {
+    font-size: 25px;
+  }
+
+  .location-info p {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+  .btn-register .view {
+    padding: 20px 50px;
+    font-size: 14px;
+  }
+
+  .videoPlayer {
+    height: 50%;
+    width: 100%;
+  }
+}

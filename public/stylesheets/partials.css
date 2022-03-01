@@ -1,0 +1,313 @@
+  /*-------------------------------------------------
+
+     footer
+
+-------------------------------------------------*/
+.footer-clean {
+    padding:50px 0;
+    background-color:#fff;
+    color:#4b4c4d;
+  }
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-clean ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-clean .item.social {
+    text-align:right;
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-clean .item.social {
+      text-align:center;
+    }
+  }
+  
+  .footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-clean .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  @media (max-width:991px) {
+    .footer-clean .item.social > a {
+      margin-top:40px;
+    }
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item.social > a {
+      margin-top:10px;
+    }
+  }
+  
+  .footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
+  }
+
+
+  /*-------------------------------------------------
+
+     Map & Contact Info.
+
+-------------------------------------------------*/
+
+#map{
+
+  height: 600px;
+
+}
+
+.btn-register .view {
+
+  display: initial;
+
+  padding: 25px 90px;
+
+  border: none;
+
+  text-decoration: none !important;
+
+  background: #ffffff;
+
+  vertical-align: middle;
+
+  position: relative;
+
+  z-index: 1;
+
+  font-size: 20px;
+
+  -webkit-backface-visibility: hidden;
+
+  -moz-osx-font-smoothing: grayscale;
+
+  text-transform: uppercase;
+
+  color: #007da6;
+
+  font-weight: bold;
+
+  transition: all 0.5s ease;
+
+}
+
+.btn-register {
+
+  padding: 50px 0px 30px;
+
+}
+
+.btn-register .view:hover{
+
+ padding: 20px 90px; 
+
+}
+
+.location{
+
+  position: relative;
+
+}
+
+.location-bg{
+
+  position: absolute;
+
+  top: 60px;
+
+  left: 90px;
+
+  background-color: #007da6;
+
+}
+
+.location-info{
+
+  color: #ffffff;
+
+  padding: 40px 50px;
+
+}
+
+.location-info h3{
+
+  font-size: 30px;
+
+  font-weight: 600;
+
+  border-bottom: 1px solid #f68864;
+
+  padding-bottom: 15px;
+
+}
+
+
+
+.location-info p{
+
+  display: flex;
+
+  font-size: 20px;
+
+  line-height: 36px;
+
+  font-weight: 300;
+
+  padding-top: 20px;
+
+}
+
+.location-info p a{
+
+  font-size: 20px;
+
+  line-height: 50px;
+
+  font-weight: 300;
+
+  color: #ffffff;
+
+}
+
+.location-info p a:hover{
+
+  text-decoration: none;
+
+}
+
+.location-info span{
+
+  padding-right: 20px;
+
+}
+
+.location-info h3 span i{
+
+  background-color: white;
+
+  color:  #007da6;
+
+  position: relative;
+
+}
+
+.location-info h3 span i:after{
+
+  content: "";
+
+  width: 0;
+
+  height: 0;
+
+  position: absolute;
+
+  bottom: -7px;
+
+  right: 13px;
+
+  margin-top: -3px;
+
+  border-width: 10px 10px 0 10px;
+
+  border-style: solid;
+
+  border-color: #ffffff transparent;
+
+}
+
+.location-info p:hover span i {
+
+  background-color: white;
+
+  color:  #007da6;
+
+  position: relative;
+
+}
+
+.location-info p:hover span i:after{
+
+ content: "";
+
+  width: 0;
+
+  height: 0;
+
+  position: absolute;
+
+  bottom: -7px;
+
+  right: 13px;
+
+  margin-top: -3px;
+
+  border-width: 10px 10px 0 10px;
+
+  border-style: solid;
+
+  border-color: #ffffff transparent;
+
+  }
+
+.location-info span i{
+
+  border: 1px solid #ffffff;
+
+  font-size: 20px;
+
+  border-radius: 50%;
+
+  height: 48px;
+
+  padding-top: 14px;
+
+  width: 48px;
+
+  text-align: center;
+
+}
