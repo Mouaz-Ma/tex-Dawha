@@ -1,7 +1,7 @@
 <div id="firstRow">
   <%- include partials/header.ejs %>
 
-  <title>معرض TEX - مجموعة معرفة للاستشارات والقبولات الجامعية</title>
+  <title>معرض Tex Doha - مجموعة معرفة للاستشارات والقبولات الجامعية</title>
 
   <!-- Custom styles for this template -->
   <link href="/stylesheets/visitorStyle.css" rel="stylesheet">
@@ -127,7 +127,7 @@
           $("#search-results").append("<p class='lead text-center mt-2'>No Results</p>");
         } else {
           data.forEach(x => {
-            $("#search-results").append('<a class="dropdown-item purpleBackground" href="http://dubai.marifetedu.com/visitor/'+ x._id + '"><p class="m-2 lead">' + x.Name + '</p> </a>');
+            $("#search-results").append('<a class="dropdown-item purpleBackground" href="http://doha.marifetedu.com/visitor/'+ x._id + '"><p class="m-2 lead">' + x.Name + '</p> </a>');
           });
         }
       }).fail(function(err){
@@ -151,7 +151,7 @@
           $("#search-results-number").append("<p class='lead text-center mt-2'>No Results</p>");
         } else {
           data.forEach(x => {
-            $("#search-results-number").append('<a class="dropdown-item purpleBackground" href="http://dubai.marifetedu.com/visitor/'+ x._id + '"><p class="m-2 lead">' + x.Name + '</p> </a>');
+            $("#search-results-number").append('<a class="dropdown-item purpleBackground" href="http://doha.marifetedu.com/visitor/'+ x._id + '"><p class="m-2 lead">' + x.Name + '</p> </a>');
           });
         }
       }).fail(function(err){

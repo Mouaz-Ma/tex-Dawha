@@ -175,7 +175,7 @@ ul{
 
 /* gray scale logo effect  */
 .friend-logo {
-  height: 250px;
+  height: 200px;
   width: auto;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);

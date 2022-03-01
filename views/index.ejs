@@ -1,7 +1,7 @@
 <div id="firstRow">
 <%- include partials/header.ejs %>
 
-<title>معرض TEX - مجموعة معرفة للاستشارات والقبولات الجامعية</title>
+<title>معرض Tex Doha - مجموعة معرفة للاستشارات والقبولات الجامعية</title>
   <!-- Custom styles for this template -->
   <link href="/stylesheets/style.css" rel="stylesheet">
     <main>
@@ -31,32 +31,33 @@
                       
                       <form class="form" action="/scan" method="POST">
                             <!-- Name -->
-                            <input id="Name" name="Name" type="text" class="form-control" placeholder="الاسم الكامل"
+                            <input id="Name" name="Name" type="text" class="form-control" placeholder="الاسم / Full Name"
                               required>
                             <!-- email -->
                             <input name="email" id="email" type="email" class="form-control"
-                              placeholder="البريد الالكتروني">
+                              placeholder="الايميل/ Email">
                             <!-- telephone number  -->
-                            <input class="form-control" id="phone" type="number" name="telephonNumber" placeholder="رقم الهاتف" required>
+                            <input class="form-control" id="phone" type="number" name="telephonNumber" placeholder="رقم الهاتف/ Phone Number " required>
                             <label class="white mt-3" for="heardBy">كيف سمعت عنا؟</label>
                             <select class="form-control" name="heardBy" id="heardBy" >
-                              <option value="other">آخرى</option>
-                              <option value="google Search">بحث غوغل</option>
-                              <option value="instagram">انستغرام</option>
-                              <option value="facebook">فيسبوك</option>
-                              <option value="influencer">مؤثر</option>
+                              <option value="other">Other/أُخرى</option>
+                              <option value="google Search">Google/بحث غوغل</option>
+                              <option value="instagram">Instagram/ انستغرام</option>
+                              <option value="facebook">Facebook/ فيسبوك</option>
+                              <option value="influencer">مؤثر/Influencer</option>
                             </select>
                             <br>
                             <button id="generator" type="submit" class="btn btn-secondary btn-lg btn-block  mt-2"
-                              value="Get QR">إرسال
-                            </button>
+                              value="Get QR">ارسال/Send </button>
                           
                         
                       </form>
                     </div>
                     <div class="col-md-6">
                       <img src="/images/Asset 1.png" alt="" id="imageAsset">
-                      <p class="lead mt-4 text-center white">12-13/3/2022, 11:00 am, فندق فيرمونت دبي</p>
+                      <p class="lead mt-4 text-center white"> فندق ويست إن - Westin Doha</p>
+                      <p class="lead mt-1 text-center white"> يوم الجمعة 18/3/2022 من الساعة 1 ظهراً حتى الساعة 8 مساءً</p>
+                      <p class="lead mt-1 text-center white"> يوم السبت 19/3/2022  من الساعة 11 صباحاً حتى الساعة 8 مساءً</p>
 
 
                     </div>
@@ -75,7 +76,7 @@
       <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
         <div class="my-3 p-3">
           <p class="text-end">لا تضع فرصتك في التعرف على أفضل الجامعات التركية </p>
-          <h4 class="display-8 text-end"> ما تبحث عنه للدراسة في تركيا TEX Dubai  ستجد في معرض </h4>
+          <h4 class="display-8 text-end"> ما تبحث عنه للدراسة في تركيا Tex Doha  ستجد في معرض </h4>
           <hr>
           <p class="text-end">مجموعة معرفة تقدم إلى جميع الطلاب الراغبين بمتاعبة دراستهم الجامعية في تركيا فرصة مميزة في هذا المعرض حيث سيتيح لك الفرصة للتعرف على أهم الاختصاصات في مختلف الجامعات الخاصة ضمن مكان واحد</p>
           <ul dir='rtl'>
@@ -104,18 +105,14 @@
   </main>
   <div class="row mt-3 text-center">
     <div class="col-md-12 mt-5">
-      <h3 class="font-weight-bold text text-center"> TEX رعاة معرض</h3>
+      <h3 class="font-weight-bold text text-center"> Tex Doha رعاة معرض</h3>
       <div class="text-center mb-5">
 
         <div class="row">
-          <div class="col-md-6"><img class="aydingImage" src="/images/Arma_01-40d38164-93a4-4cd7-a05b-83e9e0b4ff5a.png"
+          <div class="col-md-12"><img class="aydingImage" src="/images/Arma_01-40d38164-93a4-4cd7-a05b-83e9e0b4ff5a.png"
               alt="">
             <p class="text-center font-weight-normal" id="aydin"> جامعة ميديبول اسطنبول</p>
           </div>
-          <div class="col-md-6"><img class="aydingImage" src="/images/bahcesehir.jpeg"
-            alt="">
-          <p class="text-center font-weight-normal" id="aydin"> جامعة باهشه شهير اسطنبول</p>
-        </div>
       </div>
       
     </div>
@@ -128,8 +125,12 @@
         <div class="row">
           <div class="col"><img class="friend-logo m-auto" src="/images/thumbnail_Kocuniversity.png" alt=""></div>
           <div class="col"><img class="friend-logo m-auto" src="/images/fenerbahce.png" alt=""></div>
-          <div class="col"><img class="friend-logo m-2" src="/images/thumbnail_Acibadem.png" alt=""></div>
+          <div class="col"><img class="friend-logo m-auto" src="/images/thumbnail_Acibadem.png" alt=""></div>
           <div class="col"><img class="friend-logo m-auto" src="/images/thumbnail_ozyegin.png" alt=""></div>
+          <div class="col"><img class="friend-logo m-auto" src="/images/Sabanci.png" alt=""></div>
+          <div class="col"><img class="friend-logo m-auto" src="/images/thumbnail_Acibadem.png" alt=""></div>
+          <div class="col"><img class="friend-logo m-auto" src="/images/Ostim.png" alt=""></div>
+          <div class="col"><img class="friend-logo m-auto" src="/images/Bahcesehir.png" alt=""></div>
         </div>
       </div>
 
