@@ -312,6 +312,16 @@ router.get("/user/download", async (req, res) => {
       key: 'seenBy',
       width: 30
     },
+    {
+      header: 'Heard about us by',
+      key: 'heardBy',
+      width: 30
+    },
+    {
+      header: 'email',
+      key: 'email',
+      width: 30
+    },
   ];
   // adding rows
   visitorsWorksheet.addRows(visitors);
