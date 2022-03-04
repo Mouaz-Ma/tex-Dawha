@@ -322,6 +322,11 @@ router.get("/user/download", async (req, res) => {
       key: 'email',
       width: 30
     },
+    {
+      header: 'updated',
+      key: 'updated',
+      width: 30
+    },
   ];
   // adding rows
   visitorsWorksheet.addRows(visitors);
